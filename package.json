@@ -1,0 +1,16 @@
+{
+  "name": "howto.dev",
+  "main": "index.js",
+  "scripts": {
+    "bundle": "pacpan bundle",
+    "pull": "mkdir -p pages; curl https://usepages-package-emnflukryt.now.sh/howto.usepages.com.tar.gz | tar -xz -C pages --strip-components=1",
+    "start": "sudo pacpan"
+  },
+  "dependencies": {
+    "usepages-blocks": "^3.4.3"
+  },
+  "devDependencies": {
+    "pacpan": "^1.4.0",
+    "panels": "^8.1.8"
+  }
+}
